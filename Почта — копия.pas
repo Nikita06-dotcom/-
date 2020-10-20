@@ -9,16 +9,16 @@ var body, mail, pass, toReceiver: string;
     h, m, s: integer;
 begin
   //ВВЕДЕНИЕ
-  assign(f,'C:\PABCWork.NET\baza_email_rassilka_13.15.2016\Отчёт.txt');
+  assign(f,'C:\PABCWork.NET\baza\Отчёт.txt');
   rewrite(f);
   Writeln( f, 'Это рассылщик писем по интернет почте. Файл, в котором присудствуют все нужные адреса, должен быть отформатирован таким образом: все адреса идут вниз с начала строки, в начале должно стоять одно число, показывающие кол-во этих самых адресов, НЕ ДОЛЖНО БЫТЬ ПУСТЫХ СТРОЧЕК!!!' );
   Writeln( f ); Writeln( f, 'Журнал действий' );
   //НЕИЗМЕНЯЕМАЯ ЧАСТЬ
-  mail:='bilste_one';//здесь свой логин, то что в адресе до @
-  pass:='3vbaYSMIuz3%';//пароль к своему ящику в mail.ru
+  mail:='****';//здесь свой логин, то что в адресе до @
+  pass:='****';//пароль к своему ящику в mail.ru
   var fromSender := mail + '@mail.ru';
   
-  assign(filetext,'C:\PABCWork.NET\baza_email_rassilka_13.15.2016\4.txt');
+  assign(filetext,'C:\PABCWork.NET\baza\4.txt');
   reset(filetext);
   readln(filetext, n);
   //ПОДКЛЮЧЕНИЕ
